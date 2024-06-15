@@ -1,0 +1,364 @@
+<html>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>
+        CLOTHSgo--✈︎
+    </title>
+    <head>CLOTHSgo--✈︎</head>
+    <style>
+        a {
+            color: #ff0000;
+            background-color: #fffb00;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        
+        body {
+  background:#000;
+}
+
+#load {
+  position:absolute;
+  width:600px;
+  height:36px;
+  left:50%;
+  top:40%;
+  margin-left:-300px;
+  overflow:visible;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  cursor:default;
+}
+
+#load div {
+  position:absolute;
+  width:20px;
+  height:36px;
+  opacity:0;
+  font-family:Helvetica, Arial, sans-serif;
+  animation:move 2s linear infinite;
+  -o-animation:move 2s linear infinite;
+  -moz-animation:move 2s linear infinite;
+  -webkit-animation:move 2s linear infinite;
+  transform:rotate(180deg);
+  -o-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  color:#35C4F0;
+}
+
+#load div:nth-child(2) {
+  animation-delay:0.2s;
+  -o-animation-delay:0.2s;
+  -moz-animation-delay:0.2s;
+  -webkit-animation-delay:0.2s;
+}
+#load div:nth-child(3) {
+  animation-delay:0.4s;
+  -o-animation-delay:0.4s;
+  -webkit-animation-delay:0.4s;
+  -webkit-animation-delay:0.4s;
+}
+#load div:nth-child(4) {
+  animation-delay:0.6s;
+  -o-animation-delay:0.6s;
+  -moz-animation-delay:0.6s;
+  -webkit-animation-delay:0.6s;
+}
+#load div:nth-child(5) {
+  animation-delay:0.8s;
+  -o-animation-delay:0.8s;
+  -moz-animation-delay:0.8s;
+  -webkit-animation-delay:0.8s;
+}
+#load div:nth-child(6) {
+  animation-delay:1s;
+  -o-animation-delay:1s;
+  -moz-animation-delay:1s;
+  -webkit-animation-delay:1s;
+}
+#load div:nth-child(7) {
+  animation-delay:1.2s;
+  -o-animation-delay:1.2s;
+  -moz-animation-delay:1.2s;
+  -webkit-animation-delay:1.2s;
+}
+
+@keyframes move {
+  0% {
+    left:0;
+    opacity:0;
+  }
+  35% {
+    left: 41%; 
+    -moz-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+    transform:rotate(0deg);
+    opacity:1;
+  }
+  65% {
+    left:59%; 
+    -moz-transform:rotate(0deg); 
+    -webkit-transform:rotate(0deg); 
+    -o-transform:rotate(0deg);
+    transform:rotate(0deg); 
+    opacity:1;
+  }
+  100% {
+    left:100%; 
+    -moz-transform:rotate(-180deg); 
+    -webkit-transform:rotate(-180deg); 
+    -o-transform:rotate(-180deg); 
+    transform:rotate(-180deg);
+    opacity:0;
+  }
+}
+
+@-moz-keyframes move {
+  0% {
+    left:0; 
+    opacity:0;
+  }
+  35% {
+    left:41%; 
+    -moz-transform:rotate(0deg); 
+    transform:rotate(0deg);
+    opacity:1;
+  }
+  65% {
+    left:59%; 
+    -moz-transform:rotate(0deg); 
+    transform:rotate(0deg);
+    opacity:1;
+  }
+  100% {
+    left:100%; 
+    -moz-transform:rotate(-180deg); 
+    transform:rotate(-180deg);
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    left:0; 
+    opacity:0;
+  }
+  35% {
+    left:41%; 
+    -webkit-transform:rotate(0deg); 
+    transform:rotate(0deg); 
+    opacity:1;
+  }
+  65% {
+    left:59%; 
+    -webkit-transform:rotate(0deg); 
+    transform:rotate(0deg); 
+    opacity:1;
+  }
+  100% {
+    left:100%;
+    -webkit-transform:rotate(-180deg); 
+    transform:rotate(-180deg); 
+    opacity:0;
+  }
+}
+
+@-o-keyframes move {
+  0% {
+    left:0; 
+    opacity:0;
+  }
+  35% {
+    left:41%; 
+    -o-transform:rotate(0deg); 
+    transform:rotate(0deg); 
+    opacity:1;
+  }
+  65% {
+    left:59%; 
+    -o-transform:rotate(0deg); 
+    transform:rotate(0deg); 
+    opacity:1;
+  }
+  100% {
+    left:100%; 
+    -o-transform:rotate(-180deg); 
+    transform:rotate(-180deg); 
+    opacity:0;
+  }
+}
+        body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+        .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+        * {
+  /* Reset browser's padding and margin */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  background: #4a69bd;
+}
+
+.container {
+  margin: 200px auto;
+  width: 500px;
+  height: 60px
+}
+
+/* The point of this tutorial is here */
+.form {
+  display: flex;
+  flex-direction: row;
+}
+.search-field {
+  width: 100%;
+  padding: 10px 35px 10px 15px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -33px;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+    </style>
+    <a href="page2.html">ALL ITEMS</a>
+    <script>
+    function myfunction(ctrl) {
+        var TextInsideP = ctrl.getElementsByTagName('p')[0].innerHTML;
+        }</script>
+    <div class="container">
+        <form method="GET" class="form">
+          <input type="search" placeholder="Search product" class="search-field" />
+          <button type="submit" class="search-button">
+            <img src="search.png">
+          </button>
+        </form>
+      </div>
+      <div class="grid-container">
+       
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>  
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>  
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>  
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+        <div class="grid-item"><img src="back.png" alt=""><p>sub</p> <button onclick="location.href = 'i.html'" class="glow-on-hover" type="button">Check It Out</button></div>
+    <a href="page2.html">ALL ITEMS</a>
+    </div>
+      
+</html>

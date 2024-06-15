@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Page</title>
+<style>
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #e9ecef;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+form {
+background-color: #fff;
+padding: 2rem;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+width: 100%;
+max-width: 400px;
+}
+label {
+display: block;
+margin-bottom: 0.5rem;
+color: #495057;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+width: 100%;
+padding: 0.75rem;
+margin-bottom: 1rem;
+border: 1px solid #ced4da;
+border-radius: 0.25rem;
+box-sizing: border-box;
+}
+input[type="button"] {
+width: 100%;
+padding: 0.75rem;
+margin-bottom: 1rem;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 0.25rem;
+cursor: pointer;
+transition: background-color 0.15s ease-in-out;
+}
+input[type="button"]:hover {
+background-color: #0056b3;
+}
+textarea {
+resize: vertical;
+}
+</style>
+</head>
+<body>
+
+<form id="dataForm">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<label for="message">Interests: (at least three , example : brown jackets)</label>
+<textarea id="message" name="message" required></textarea>
+<input type="button" value="Submit" onclick="submitData()">
+</form>
+
+<script>
+function submitData() {
+var name = document.getElementById('name').value;
+var email = document.getElementById('email').value;
+var message = document.getElementById('message').value;
+
+var formData = { name: name, email: email, message: message };
+var existingData = JSON.parse(localStorage.getItem('formData')) || [];
+existingData.push(formData);
+localStorage.setItem('formData', JSON.stringify(existingData));
+window.location.href = '--------------------------------------------THE SHOP WHERE THE PRODUCTS WILL BE SOLD-------------------------------------------------------------------';
+}
+</script>
+
+</body>
+</html>
